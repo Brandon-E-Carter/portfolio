@@ -11,18 +11,21 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
 
-   <link rel="stylesheet" href="./style.css">
+   <script src="https://kit.fontawesome.com/aca4e15455.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+
+   <link rel="stylesheet" href="styles/style.css">
 </head>
 
 
 <body>
-   <div class="slide row">
-      <header>
-         <div class="h1-container flex-container">
+   <div class="row">
+      <header class="slide">
+         <div class="h1-container flex-container wrapper">
             <h1 class="flex-container">Brandon
                <span>
                   <span>Carter</span><span>
-                     <span class="slide-button next-slide">.</span>
+                     <span class="flare slide-button next-slide">.</span>
                   </span>
                </span>
             </h1>
@@ -31,24 +34,159 @@
    </div>
 
    <div class="row grid-container">
-      <section class="slide one"></section>
-      <section class="slide two"></section>
-   </div>
+      <section class="slide one about flex-container wrapper">
+         <h2>About me</h2>
+         <div>
+            <p>Hi I'm Brandon. I'm a Game Developer turned Web Developer, recently graduating from the Juno College Web
+               Development Bootcamp. Building an accessible and responsive website is one thing, but packing a ton of
+               functionality and features into a well oiled UX paradise is entirely a different topic. I'm obssessed
+               with coding, with a strong emphasis on JavaScript.</p>
+         </div>
+         <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur tempore, perferendis sint fugit ipsum
+            doloremque minima eum quisquam tempora nesciunt a assumenda suscipit voluptatem obcaecati doloribus
+            molestiae, voluptas nostrum? Voluptas possimus praesentium iusto? Esse vitae ex officiis excepturi est
+            provident rem, hic alias assumenda delectus quidem, nihil deleniti ipsa sapiente quia dolorum dicta?
+            Doloribus corrupti minima ipsum mollitia esse nulla laboriosam facere vero hic placeat voluptates voluptas
+            magni repellat soluta accusamus tenetur assumenda totam eos saepe sunt rem rerum, atque vitae. Doloremque
+            porro amet architecto ipsum accusantium illo tempora sapiente repellat impedit labore, minus est,
+            dignissimos mollitia, rerum voluptatum sunt a itaque nostrum. Quisquam nulla explicabo nisi, vel doloribus
+            consectetur numquam qui neque, quae maxime, quasi delectus aliquam. Consequuntur, unde amet? Dolore
+            repudiandae, sed eligendi repellendus nam officiis ipsam dolor autem voluptatibus provident? Porro quasi,
+            inventore optio eligendi dolorem omnis reiciendis voluptatem error iure neque delectus exercitationem?
+            Doloribus, rerum enim!</p> -->
+      </section>
 
-   <div class="slide row">
-      <section class="three"></section>
+      <section class="slide two projects">
+         <div class="wrapper">
+            <h2>Projects</h2>
+            <div class="projects-container">
+               <div class="project">
+                  <div class="flex-container">
+                     <!-- change the name of this netlify project -->
+                     <a href="https://beerapp.github.io/beerApp/">
+                        <img src="./assets/Beer-Is-Fine.PNG" alt="Beer is Fine App">
+                     </a>
+                     <div class="text-container flex-container">
+                        <h3>Beer is Fine</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum excepturi expedita fuga?
+                           Inventore, dolores vitae iusto excepturi unde ad saepe similique nobis nemo dolorum est autem
+                           quibusdam quisquam. Commodi, provident.</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="project">
+                  <div class="flex-container">
+                     <!-- change the name of this netlify project -->
+                     <a href="https://brandon-carter-project-three.netlify.app/">
+                        <img src="./assets/B-Mart.PNG" alt="B-Mart App">
+                     </a>
+                     <div class="text-container flex-container">
+                        <h3>B-Mart</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit at natus vel dolore, animi amet
+                           hic nulla aperiam excepturi maiores accusantium minus, similique odio blanditiis? Suscipit
+                           assumenda deserunt a consequatur!</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="project">
+                  <div class="flex-container">
+                     <a href="https://concert-accountant.netlify.app/">
+                        <img src="./assets/Concert-Accountant.PNG" alt="Concert Accountant App">
+                     </a>
+                     <div class="text-container flex-container">
+                        <h3>Concert Accountant</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit at natus vel dolore, animi amet
+                           hic nulla aperiam excepturi maiores accusantium minus, similique odio blanditiis? Suscipit
+                           assumenda deserunt a consequatur!</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="project">
+                  <div class="flex-container">
+                     <!-- Change the name of this netflify project -->
+                     <a href="https://brandon-e-carter.github.io/brandon-carter-project-one/">
+                        <img src="./assets/PSD-Conversion.PNG" alt="PSD Conversion development">
+                     </a>
+                     <div class="text-container flex-container">
+                        <h3>PSD Conversion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit at natus vel dolore, animi amet
+                           hic nulla aperiam excepturi maiores accusantium minus, similique odio blanditiis? Suscipit
+                           assumenda deserunt a consequatur!</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
    </div>
 
    <div class="row grid-container">
-      <section class="slide five"></section>
-      <section class="slide four"></section>
+      <section class="slide three reverse skills wrapper">
+         <h2>Skills</h2>
+         <div class="skills-container flex-container">
+            <div>
+               <i class="fab fa-js"></i>
+               <p>JavaScript</p>
+            </div>
+            <div>
+               <i class="fab fa-react"></i>
+               <p>React</p>
+            </div>
+            <div>
+               <i class="fab fa-html5"></i>
+               <p>HTML</p>
+            </div>
+            <div>
+               <i class="fab fa-css3-alt"></i>
+               <p>CSS</p>
+            </div>
+            <div>
+               <i class="fab fa-github"></i>
+               <p>GitHub</p>
+            </div>
+            <div>
+               <i class="fas fa-code-branch"></i>
+               <p>Source Control</p>
+            </div>
+            <div>
+               <i class="fab fa-sass"></i>
+               <p>Sass</p>
+            </div>
+            <div>
+               <i class="devicon-firebase-plain"></i>
+               <p>GitHub</p>
+            </div>
+         </div>
+      </section>
+
+      <section class="slide four contact">
+         <div class="wrapper">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/f/xrgrazqo" method="POST">
+               <div class="form-element">
+                  <label for="name" class="sr-only">Name</label>
+                  <div><input type="text" id="name" placeholder="Name"></div>
+               </div>
+               <div class="form-element">
+                  <label for="email" class="sr-only">Email</label>
+                  <input type="email" id="email" name="_replyto" placeholder="Email">
+               </div>
+               <div class="form-element">
+                  <label for="message" class="sr-only"></label>
+                  <textarea name="message" id="message" cols="30" rows="12" placeholder="Message"></textarea>
+               </div>
+               <button type="submit">Send</button>
+            </form>
+         </div>
+      </section>
    </div>
 
-   <div class="slide row">
-      <footer></footer>
-   </div>
+   <footer>Brandon Carter - 2021</footer>
 
-   <script src="./script.js"></script>
+   <!-- <script src="./script.js"></script> -->
 </body>
 
 </html>
