@@ -1,0 +1,426 @@
+@import "setup";
+
+$font-poppins: 'Poppins', sans-serif;
+$font-montserrat: 'Montserrat', sans-serif;
+
+$color-primary: #4291f8;
+$color-secondary: #ffdb58;
+// $color-secondary: #FED000;
+$color-dark: rgb(34, 45, 49);
+
+h1,
+h2,
+h3,
+html {
+   margin: 0;
+   padding: 0;
+}
+
+h1,
+h2,
+h3 {
+   font-family: $font-poppins;
+}
+
+p {
+   font-family: $font-montserrat;
+}
+
+i {
+   font-size: 5rem;
+   text-shadow: 3px 3px $color-primary;
+}
+
+.flex-container {
+   display: flex;
+}
+
+html,
+body {
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-size: 125%;
+   height: 100vh;
+}
+
+.wrapper {
+   max-width: 1500px;
+   width: 90%;
+   margin: 0 auto;
+}
+
+section {
+   padding: 100px 0;
+}
+// section:first-of-type {
+//    padding-top: 60px;
+// }
+// section:last-of-type {
+//    padding-bottom: 60px;
+// }
+
+header {
+   height: 100vh;
+   // background: #6396D8;
+   // background: linear-gradient(210deg, rgba(99,150,216,1) 0%, rgba(140,179,230,1) 46%, rgba(212,231,255,1) 100%); 
+   
+   // background: rgb(15,112,237);
+   // background: linear-gradient(210deg, rgba(15,112,237,1) 0%, rgba(99,150,216,1) 100%);
+   
+   background: rgb(8,79,163);
+   background: linear-gradient(210deg, rgba(8,79,163,1) 0%, rgba(112,172,250,1) 100%); 
+}
+
+.h1-container {
+   height: 100%;
+   align-items: flex-end;
+}
+
+h1 {
+   font-size: 9rem;
+   color: white;
+
+   margin: 160px 80px;
+   margin-bottom: 180px;
+   // text-shadow: 10px s;
+
+   flex-direction: column;
+
+   span {
+      display: inline-block;
+   }
+
+   .flare {
+      color: $color-secondary;
+   }
+}
+
+h2 {
+   color: $color-dark;
+   text-transform: uppercase;
+
+   font-size: 2.6rem;
+   margin: 0 70px;
+   text-shadow: 3px 2px $color-secondary;
+}
+
+.about {
+   align-items: center;
+   padding: 180px 0;
+}
+
+.projects {
+   background: $color-dark;
+   color: white;
+
+   .project {
+      margin: 80px 0;
+   }
+
+   .projects-container {
+      margin-top: 80px;
+   }
+
+   .text-container {
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin: 0 20px;
+   }
+
+   h2 {
+      color: white;
+      text-shadow: 3px 2px $color-primary;
+   }
+
+   // .image-container {
+   //    width: 1000px;
+   //    object-fit: contain;
+
+      img {
+         width: 500px;
+         display: block;
+      }
+   // }
+}
+
+.skills {
+   .skills-container {
+      flex-wrap: wrap;
+      margin-top: 80px;
+
+      div {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 150px;
+      }
+
+      div:hover {
+         i {
+            color: $color-secondary;
+         }
+      }
+   }
+}
+
+.contact {
+   background: #ffffe9;
+
+   width: 100%;
+
+   h2 {
+      text-align: center;
+   }
+
+   form {
+      background: $color-dark;
+      border-radius: 15px;
+      
+      padding: 30px;
+      margin: 80px auto;
+      width: max-content;
+      
+
+      .form-element {
+         width: 550px;
+         padding: 10px;
+      }
+
+      input,
+      textarea,
+      button {
+         width: 100%;
+         padding: 30px;
+         border-radius: 12px;
+         border: none;
+         margin: 10px 0;
+      }
+
+      button {
+         width: 250px;
+         margin: 20px 10px;
+      }
+   }
+}
+
+footer {
+   background: $color-dark;
+}
+@media (max-width: 1000px) {
+   h1 {
+      font-size: 7rem;
+      margin-left: 0;
+   }
+   
+   .projects {
+      .flex-container {
+         flex-direction: column;
+         align-items: center;
+      }
+
+      h3 {
+         margin: 0;
+         margin-bottom: 30px;
+      }
+
+      .text-container {
+         margin: 70px 10px 0 10px;
+      }
+   }
+}
+
+@media (max-width: 900px) {
+   .about {
+      flex-direction: column;
+      margin: 10px auto;
+      text-align: center;
+
+      h2 {
+         margin: 0;
+         margin-bottom: 40px;
+      }
+   }
+}
+
+@media (max-width: 700px) {
+   .wrapper {
+      width: 100%;
+   }
+
+   header {
+      height: 75vh;
+   }
+
+   .h1-container {
+      align-items: center;
+   }
+
+   h1 {
+      font-size: 5rem;
+      margin: 0;
+      margin-bottom: 50px;
+   }
+
+   h2 {
+      text-align: center;
+      margin: 0;
+   }
+
+   .about {
+      padding: 60px 0;
+   }
+
+   .projects {
+      padding: 80px 0 10px;
+
+      img {
+         width: 100%;
+      }
+      
+      .text-container {
+         // margin: 70px 10px 0 10px;
+         
+         p {
+            text-align: center;
+         }
+      }
+   }
+
+   .skills .skills-container {
+      justify-content: center;
+   }
+
+   .contact form .form-element {
+      width: 100%;
+   }
+   
+   .contact form {
+      width: 100%;
+   }
+}
+
+@media (max-width: 450px) {
+   header {
+      height: 40vh;
+   }
+
+   h1 {
+      font-size: 3.4rem;
+      margin: 0 auto 50px;
+   }
+   
+   .contact {
+      padding-bottom:  0;
+      form {
+         padding: 10px;
+         
+         input,
+         textarea,
+         button {
+            padding: 20px;
+            margin: 0;
+         }
+
+         button {
+            width: 100%;
+         }
+      }
+   }
+}
+
+
+/* html {
+   font-size: 125%;
+   height: 100vh;
+   overflow: hidden;
+}
+
+body {
+   height: 100vh;
+   width: 100vw;
+   margin: 0;
+   padding: 0;
+   scroll-snap-type: both mandatory;
+   overflow-x: hidden;
+   overflow-y: scroll;
+}
+
+.grid-container {
+   display: grid;
+   grid-template-columns: repeat(2, 100%);
+   scroll-snap-type: both mandatory;
+   scroll-snap-align: center;
+}
+
+.row {
+   height: 100vh;
+   width: 100%;
+}
+
+.row > * {
+   height: 100%;
+}
+
+section, .row {
+   scroll-snap-align: center;
+}
+
+header {
+   background: #6396D8;
+   background: linear-gradient(210deg, rgba(99,150,216,1) 0%, rgba(140,179,230,1) 46%, rgba(212,231,255,1) 100%); 
+}
+
+.h1-container {
+   height: 100%;
+   align-items: flex-end;
+}
+
+h1 {
+   font-family: 'Poppins', sans-serif;
+   font-size: 9rem;
+   color: white;
+
+   margin: 160px;
+   margin-bottom: 180px;
+
+   flex-direction: column;
+}
+
+h1 span {
+   display: inline-block;
+}
+
+.one {
+   background: lightcoral;
+}
+
+.two {
+   background: green;
+}
+
+.three {
+   background: orange;
+}
+
+.four {
+   background: red;
+}
+
+footer {
+   background: darkslategray;
+}
+
+.reverse {
+   order: 1;
+}
+
+.disabled {
+   display: none;
+}
+
+.side-scroll {
+   overflow-x: scroll;
+} */
