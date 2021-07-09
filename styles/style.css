@@ -249,7 +249,8 @@ h3 {
   font-family: "Poppins", sans-serif;
 }
 
-p {
+p,
+footer {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -283,6 +284,23 @@ html {
 
 section {
   padding: 100px 0;
+}
+
+.skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+}
+.skill:hover i {
+  color: #ffdb58;
 }
 
 header {
@@ -364,22 +382,6 @@ h2 {
       flex-wrap: wrap;
   margin-top: 80px;
 }
-.skills .skills-container div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 150px;
-}
-.skills .skills-container div:hover i {
-  color: #ffdb58;
-}
 
 .contact {
   background: #ffffe9;
@@ -392,7 +394,7 @@ h2 {
   background: #222d31;
   border-radius: 15px;
   padding: 30px;
-  margin: 80px auto;
+  margin: 80px auto 0;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -416,7 +418,10 @@ h2 {
 }
 
 footer {
-  background: #222d31;
+  background: #4291f8;
+  color: white;
+  text-align: center;
+  padding: 5px;
 }
 
 @media (max-width: 1000px) {
@@ -510,9 +515,13 @@ footer {
     width: 100%;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 470px) {
   header {
     height: 40vh;
+  }
+
+  section {
+    padding: 50px 0;
   }
 
   h1 {
@@ -521,10 +530,11 @@ footer {
   }
 
   .contact {
-    padding-bottom: 0;
+    padding-bottom: 30px;
   }
   .contact form {
     padding: 10px;
+    margin: 50px auto 0;
   }
   .contact form input,
 .contact form textarea,
@@ -534,6 +544,13 @@ footer {
   }
   .contact form button {
     width: 100%;
+  }
+
+  .skills .skill {
+    width: 100px;
+  }
+  .skills i {
+    font-size: 3rem;
   }
 }
 /* html {
