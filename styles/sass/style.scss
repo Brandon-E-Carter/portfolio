@@ -22,7 +22,8 @@ h3 {
    font-family: $font-poppins;
 }
 
-p {
+p,
+footer {
    font-family: $font-montserrat;
 }
 
@@ -207,8 +208,14 @@ h2 {
 }
 
 footer {
-   background: $color-dark;
+   background: $color-primary;
+   color: white;
+   text-align: center;
+
+   padding: 5px;
 }
+
+
 @media (max-width: 1000px) {
    h1 {
       font-size: 7rem;

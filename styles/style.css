@@ -249,7 +249,8 @@ h3 {
   font-family: "Poppins", sans-serif;
 }
 
-p {
+p,
+footer {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -416,7 +417,10 @@ h2 {
 }
 
 footer {
-  background: #222d31;
+  background: #4291f8;
+  color: white;
+  text-align: center;
+  padding: 5px;
 }
 
 @media (max-width: 1000px) {
